@@ -62,6 +62,10 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
 >> I'm using Atom right now. Again, it's just a tool I'm more familiar with. Sublime is nice too.
->> `Ctrl + /` is a useful way to toggle comments in code, as long as Atom knows what type of code your file is.
+
+>> `Ctrl + /` is a useful way to toggle comments in code, as long as Atom knows what type of code your file is. Also, `Ctrl+Shift+m` gives you a Markdown preview, which is super useful for doing what I'm doing right now :octocat:.
+
+>>There are a lot of ways to customize Atom, from packages to editing text config files.
+
 
 ---
