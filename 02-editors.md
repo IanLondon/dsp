@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I like vim, never tried Emacs but I don't like the idea of chorded key commands.
 
 ---
 
@@ -61,6 +61,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I'm using Atom right now. Again, it's just a tool I'm more familiar with. Sublime is nice too.
+>> `Ctrl + /` is a useful way to toggle comments in code, as long as Atom knows what type of code your file is.
 
 ---
