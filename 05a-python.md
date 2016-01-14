@@ -12,7 +12,9 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and tuples are zero-indexed sequences of elements. The big difference is that _lists are mutable_: elements can be appended and removed, pushed and popped. You have to watch out for accidentally making an alias to a list when you meant to make a copy. Eg if you do `a = [2,4,1]; b = a; c = b.pop()` then both a & b will equal [2, 4] because they're both the same list. Tuples are _not mutable_, so they cannot be modified but only replaced by another tuple or something else.
+>> Since dictionary keys have a one-to-one relationship with a value in the dictionary, they cannot be mutable. If you changed the key, it would no longer correspond to that value. It might be possible to implement a dictionary that uses mutable objects as keys, but it would be weird to do and inefficient because the dictionary would have to track updates to any of the objects that are its keys. So for dictionaries that use hashtables, like python dictionaries, you need to use immutable objects as keys: tuples, strings, ints, floats, etc. Mutable objects like lists don't make sense to use as dictionary keys.
+
 
 ---
 
