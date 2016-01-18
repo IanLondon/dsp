@@ -1,4 +1,5 @@
 # Hint:  use Google to find python function
+import datetime as dt
 
 ####a) 
 date_start = '01-02-2013'  
