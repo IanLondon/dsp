@@ -32,12 +32,13 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >> `lambda` is a one-line anonymous function which returns a value. It's often used when performing a simple function over elements of an iterable. For example, if you have a list of tuples with the name and age of a person like `[(8, 'alph'), (2, 'betty'), (10, 'chad'), (7, 'dot'), (5, 'elma'), (17, 'fred'), (9, 'gus')]`:
 
-  # sort by name
-  sorted(kids, key=lambda kid: kid[1])
-  
-  # sort by age
-  sorted(kids, key=lambda kid: kid[0])
+```
+# sort by name
+sorted(kids, key=lambda kid: kid[1])
 
+# sort by age
+sorted(kids, key=lambda kid: kid[0])
+```
 
 ---
 
@@ -51,36 +52,44 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> `map` applies a function over the values of an iterable. Eg to convert a list of radii to circumferences:
 
-  radii = [5,2,3,9]
-  circumference = map(lambda r: 3.14*r**2, radii)
-  # >> [78.5, 12.56, 28.26, 254.34]
+```
+radii = [5,2,3,9]
+circumference = map(lambda r: 3.14*r**2, radii)
+# >> [78.5, 12.56, 28.26, 254.34]
+```
   
 ### Filter
 
 >> `filter` also works over an iterable. Each element is passed to the given function, and if that function returns true the item is included in the result (if false, not included)
 
-  # find all the words with the letter 'a'
-  ligeia = ['lo','tis','a','gala','night','within','the','lonesome','latter','years']
-  filter(lambda word: 'a' in word, ligeia)
-  # >> ['a', 'gala', 'latter', 'years']
-  
+```
+# find all the words with the letter 'a'
+ligeia = ['lo','tis','a','gala','night','within','the','lonesome','latter','years']
+filter(lambda word: 'a' in word, ligeia)
+# >> ['a', 'gala', 'latter', 'years']
+```
+
 ### Set comprehensions
 
 >> You can perform an operation across each element of an iterable, and get a set as a result
 
-  # Get a set of squared values from 0 to 9
-  spam_set = set(range(10))
-  {x**2 for x in spam_set}
-  # >> {0, 1, 4, 9, 16, 25, 36, 49, 64, 81}
+```
+# Get a set of squared values from 0 to 9
+spam_set = set(range(10))
+{x**2 for x in spam_set}
+# >> {0, 1, 4, 9, 16, 25, 36, 49, 64, 81}
+```
 
 ### Dictionary comprehensions
 
 >> Similar idea, just specify keys as well as val
 
-  # Get a dictionary of the same thing as above, 
-  # each value is the square of its key
-  {a:a**2 for a in range(10)}
-  # >> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+```
+# Get a dictionary of the same thing as above, 
+# each value is the square of its key
+{a:a**2 for a in range(10)}
+# >> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+```
   
 ---
 
