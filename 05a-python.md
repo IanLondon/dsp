@@ -22,7 +22,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and sets are both containers that store objects. Lists store objects in order, eg `[1,2,3,'asparagus',['nested','list'],1]`. Sets store a bunch of unique objects, without order. Unlike lists, objects in a set must be hashable because the set uses a hash to access them. Since sets use a hash table, lookup in a set is faster than in a list. Basically, if you want to store a bunch of unique values or strings or other hashable objects, use a set. If you care about the order and/or want to allow duplicates, use a list.
 
 ---
 
@@ -30,7 +30,14 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `lambda` is a one-line anonymous function which returns a value. It's often used when performing a simple function over elements of an iterable. For example, if you have a list of tuples with the name and age of a person like `[(8, 'alph'), (2, 'betty'), (10, 'chad'), (7, 'dot'), (5, 'elma'), (17, 'fred'), (9, 'gus')]`:
+
+  # sort by name
+  sorted(kids, key=lambda kid: kid[1])
+  
+  # sort by age
+  sorted(kids, key=lambda kid: kid[0])
+
 
 ---
 
@@ -38,8 +45,43 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions let you define a list in a terse way, using some iterable instead of a `for` loop. Eg, `ages = [random.randint(1,18) for _ in range(7)]` is how I got the ages for the kid tuples above. I've followed the convention of using an underscore as a placeholder since I don't really care about the values from iterable, `range`, in this usage. But you could use the value of the iterable to get multiples of 2 with `evens = [x*2 for x in range(10)]`, for example.
 
+### Map
+
+>> `map` applies a function over the values of an iterable. Eg to convert a list of radii to circumferences:
+
+  radii = [5,2,3,9]
+  circumference = map(lambda r: 3.14*r**2, radii)
+  # >> [78.5, 12.56, 28.26, 254.34]
+  
+### Filter
+
+>> `filter` also works over an iterable. Each element is passed to the given function, and if that function returns true the item is included in the result (if false, not included)
+
+  # find all the words with the letter 'a'
+  ligeia = ['lo','tis','a','gala','night','within','the','lonesome','latter','years']
+  filter(lambda word: 'a' in word, ligeia)
+  # >> ['a', 'gala', 'latter', 'years']
+  
+### Set comprehensions
+
+>> You can perform an operation across each element of an iterable, and get a set as a result
+
+  # Get a set of squared values from 0 to 9
+  spam_set = set(range(10))
+  {x**2 for x in spam_set}
+  # >> {0, 1, 4, 9, 16, 25, 36, 49, 64, 81}
+
+### Dictionary comprehensions
+
+>> Similar idea, just specify keys as well as val
+
+  # Get a dictionary of the same thing as above, 
+  # each value is the square of its key
+  {a:a**2 for a in range(10)}
+  # >> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+  
 ---
 
 ###Complete the following problems by editing the files below:
