@@ -4,7 +4,7 @@
 
 This question has multiple parts, and will take **20+ hours** to complete, depending on your python proficiency level.  Knowing these skills will be extremely beneficial during the first few weeks of the bootcamp.
 
-For Part 1, use of regular expressions is optional.  Work can be completed using a programming approach of your preference. 
+For Part 1, use of regular expressions is optional.  Work can be completed using a programming approach of your preference.
 
 ---
 
@@ -12,19 +12,70 @@ The data file represents the [Biostats Faculty List at University of Pennsylvani
 
 This data is available in this file:  [faculty.csv](python/faculty.csv)
 
---- 
+---
 
 ###Part I - Regular Expressions  
 
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> REPLACE THIS WITH YOUR RESPONSE
+> There are 8 different degrees, plus one person with a `0` degree entry. Several people have multiple degrees: there are 46 degrees total for the 37 people. These are degrees listed by total frequency:
+
+<table class="dataframe" border="1">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>freq</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>PhD</th>
+      <td>31</td>
+    </tr>
+    <tr>
+      <th>ScD</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>MPH</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>MS</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>MD</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>MA</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>BSEd</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>JD</th>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
->> REPLACE THIS WITH YOUR RESPONSE
+> There are 3 titles, after correcting 'Professor *in* Biostatistics' typo to 'Professor *of* Biostatistics'
+
+* Professor of Biostatistics: 13
+* Associate Professor of Biostatistics: 12
+* Assistant Professor of Biostatistics: 12
 
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
@@ -37,6 +88,8 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 >> REPLACE THIS WITH YOUR RESPONSE
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
+
+> I used a notebook, the file is at [advanced_python_regex.ipynb](python/advanced_python_regex.ipynb)
 
 ---
 
@@ -97,9 +150,8 @@ Print the first 3 key and value pairs of the dictionary:
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
---- 
+---
 
 If you're all done and looking for an extra challenge, then try the below problem:  
 
 ### [Markov](python/markov.py) (Optional)
-
