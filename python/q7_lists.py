@@ -15,7 +15,8 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    valid_words = filter(lambda w: len(w)>=2 and w[0] == w[-1], words)
+    return len(valid_words)
 
 
 def front_x(words):
@@ -32,7 +33,19 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    starts_w_x = []
+    the_rest = []
+    for word in words:
+        if word[0]=='x':
+            starts_w_x.append(word)
+        else:
+            the_rest.append(word)
+
+    starts_w_x.sort()
+    the_rest.sort()
+
+    return starts_w_x + the_rest
+
 
 
 def sort_last(tuples):
@@ -49,7 +62,7 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    return sorted(tuples, key=lambda x: x[-1])
 
 
 def remove_adjacent(nums):
@@ -68,7 +81,19 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    # Handle empty list
+    if len(nums) == 0:
+        return []
+
+    # Keep a running list of values, ignore sequential values
+    prev_val = nums[0]
+    result = [prev_val]
+    for n in nums[1:]:
+        if n != prev_val:
+            result.append(n)
+            prev_val = n
+
+    return result
 
 
 def linear_merge(list1, list2):
@@ -85,4 +110,20 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    result = []
+    i1 = 0
+    i2 = 0
+    # Go through until you have exhausted at least one of the lists
+    while i1 < len(list1) and i2 < len(list2):
+        if list1[i1] <= list2[i2]:
+            result.append(list1[i1])
+            i1 += 1
+        else:
+            result.append(list2[i2])
+            i2 += 1
+
+    # Now there may be part of one list left over.
+    # Append it to the end of the result with a slicing
+    # trick: note that [1,2,3][999:] --> []
+
+    return result + list1[i1:] + list2[i2:]
