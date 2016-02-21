@@ -127,9 +127,9 @@ weiyang@mail.med.upenn.edu
 * cceb.med.upenn.edu
 * mail.med.upenn.edu
 
-Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
+<s>Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)</s>
 
-> I used a notebook, the file is at [advanced_python_regex.ipynb](python/advanced_python_regex.ipynb)
+> I used a notebook, the file is at [advanced_python_regex.ipynb](python/advanced_python_ALL_PARTS.ipynb)
 
 ---
 
@@ -137,7 +137,9 @@ Place your code in this file: [advanced_python_regex.py](python/advanced_python_
 
 ####Q5.  Write email addresses from Part I to csv file
 
-Place your code in this file: [advanced_python_csv.py](python/advanced_python_csv.py)
+<s>Place your code in this file: [advanced_python_csv.py](python/advanced_python_csv.py)</s>
+
+> I used a notebook, the file is at [advanced_python_regex.ipynb - Part II](python/advanced_python_ALL_PARTS.ipynb)
 
 The emails.csv file you create should be added and committed to your forked repository.
 
@@ -188,7 +190,9 @@ Print the first 3 key and value pairs of the dictionary:
 
 >> REPLACE THIS WITH YOUR RESPONSE
 
-Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
+<s>Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)</s>
+
+> I used a notebook, the file is at [advanced_python_regex.ipynb - Part III](python/advanced_python_ALL_PARTS.ipynb)
 
 ---
 
