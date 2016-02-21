@@ -129,7 +129,7 @@ weiyang@mail.med.upenn.edu
 
 <s>Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)</s>
 
-> I used a notebook, the file is at [advanced_python_regex.ipynb](python/advanced_python_ALL_PARTS.ipynb)
+> I used a notebook, the file is at [advanced_python_ALL_PARTS.ipynb](python/advanced_python_ALL_PARTS.ipynb)
 
 ---
 
@@ -139,7 +139,7 @@ weiyang@mail.med.upenn.edu
 
 <s>Place your code in this file: [advanced_python_csv.py](python/advanced_python_csv.py)</s>
 
-> I used a notebook, the file is at [advanced_python_regex.ipynb - Part II](python/advanced_python_ALL_PARTS.ipynb)
+> I used a notebook, the file is at [advanced_python_ALL_PARTS.ipynb - Part II](python/advanced_python_ALL_PARTS.ipynb)
 
 The emails.csv file you create should be added and committed to your forked repository.
 
@@ -169,7 +169,11 @@ faculty_dict = { 'Ellenberg': [\
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+> ```
+Putt [' PhD ScD', 'Professor of Biostatistics', 'mputt@mail.med.upenn.edu']
+Feng [' Ph.D', 'Assistant Professor of Biostatistics', 'ruifeng@upenn.edu']
+Bilker ['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']
+```
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -184,15 +188,23 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+> ```
+('Yimei', 'Li') [' Ph.D.', 'Assistant Professor of Biostatistics', 'liy3@email.chop.edu']
+('Hongzhe', 'Li') [' Ph.D', 'Professor of Biostatistics', 'hongzhe@upenn.edu']
+('Justine', 'Shults') [' Ph.D.', 'Professor of Biostatistics', 'jshults@mail.med.upenn.edu']
+```
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Sort by last name and print the first 3 key and value pairs.  
 
->> REPLACE THIS WITH YOUR RESPONSE
+> ```
+(('Scarlett', 'Bellamy'), [' Sc.D.', 'Associate Professor of Biostatistics', 'bellamys@mail.med.upenn.edu'])
+(('Warren', 'Bilker'), ['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu'])
+(('Matthew', 'Bryan'), [' PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu'])
+```
 
 <s>Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)</s>
 
-> I used a notebook, the file is at [advanced_python_regex.ipynb - Part III](python/advanced_python_ALL_PARTS.ipynb)
+> I used a notebook, the file is at [advanced_python_ALL_PARTS.ipynb - Part III](python/advanced_python_ALL_PARTS.ipynb)
 
 ---
 
