@@ -46,16 +46,10 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> I'm using Python 2.7 because I'm not familiar with 3 and it seems like overall, 2.7 is better supported especially for scientific packages. 
-
->> You can check the version by typing `python --version`
+>> I'm using Python 2.7 because I'm not familiar with 3 and it seems like overall, 2.7 is better supported especially for scientific packages.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
-
-
+>> You can check the version with `python --version`
