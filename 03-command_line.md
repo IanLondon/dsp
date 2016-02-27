@@ -66,7 +66,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+* `ls -1` shows each file on its own line
+* `ls -l --author` shows the author of each file
+* `ls -lt` shows as a list sorted by time modified
+* `ls -lSh` list sorted by size, with human-readable sizes
+* `ls -lRSh` show all files recursively, going into all directories, contents for each directory sorted by human-readable size
 
 ---
 
