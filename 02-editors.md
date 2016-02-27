@@ -10,6 +10,7 @@ It may sound silly, but [make sure](http://www.typingtest.com/) you know how to 
 
 A lot of your work will be done in a text editor. You have to know how to use your editor. Any editor will work, but knowing a powerful editor well will make you faster, more comfortable, and more effective.
 
+---
 
 ### Terminal Editor
 
@@ -29,14 +30,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 ---
 
-What terminal editor will you use? How did you make your decision?
-
->> I like vim, never tried Emacs but I don't like the idea of chorded key commands.
-
----
-
-
-### Graphical Editor
+###Graphical Editor
 
 You will probably spend most of your time with access to a graphical interface, where you have more choices in editors and integrated development environments.
 
@@ -59,6 +53,16 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 ---
 
+###Q1. Terminal Editor
+
+What terminal editor will you use? How did you make your decision?
+
+>> I like vim, never tried Emacs but I don't like the idea of chorded key commands.
+
+--
+
+###Q2. Graphical Editor
+
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
 >> I'm using Atom right now. Again, it's just a tool I'm more familiar with. Sublime is nice too.
@@ -66,6 +70,3 @@ What graphical editor will you use? How did you make your decision? What are som
 >> `Ctrl + /` is a useful way to toggle comments in code, as long as Atom knows what type of code your file is. Also, `Ctrl+Shift+m` gives you a Markdown preview, which is super useful for doing what I'm doing right now :octocat:.
 
 >>There are a lot of ways to customize Atom, from packages to editing text config files.
-
-
----
