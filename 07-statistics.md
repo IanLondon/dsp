@@ -9,9 +9,9 @@ Read Allen Downey's [Think Stats (second edition)](http://greenteapress.com/thin
 
 The ThinkStats book is approximately 200 pages in length.  It is recommended you read the entire book, particularly if you are less familiar with introductory statistical concepts.
 
-The stats exercises have been chosen to introduce/solidify some relevant statistical concepts related to data science.  The solutions for these exercises are available in the ThinkStats repository on GitHub.  You should focus on understanding the statistical concepts, python programming and interpreting the results.  If you are stuck, review the solutions and recode the python in a way that is more understandable to you. 
+The stats exercises have been chosen to introduce/solidify some relevant statistical concepts related to data science.  The solutions for these exercises are available in the ThinkStats repository on GitHub.  You should focus on understanding the statistical concepts, python programming and interpreting the results.  If you are stuck, review the solutions and recode the python in a way that is more understandable to you.
 
-For example, in the first exercise, the author has already written a function to compute Cohen's D.  You could import it, or you could write your own to practice python and develop a deeper understanding of the concept. 
+For example, in the first exercise, the author has already written a function to compute Cohen's D.  You could import it, or you could write your own to practice python and develop a deeper understanding of the concept.
 
 Complete the following exercises along with the questions in this file. They come from Think Stats, and some can be solved using code provided with the book. The preface of Think Stats [explains](http://greenteapress.com/thinkstats2/html/thinkstats2001.html#toc2) how to use the code.  
 
@@ -19,7 +19,7 @@ Communicate the problem, how you solved it, and the solution, within each of the
 
 ---
 
-### Instructions for cloning the repo 
+### Instructions for cloning the repo
 Using the code referenced in the book, follow the step-by-step instructions below.  
 
 **Step 1. Create a directory on your computer where you will do the prework.  Below is an example:**
@@ -60,24 +60,40 @@ This problem presents a robust example of actual vs biased data.  As a data scie
 This questions asks you to examine the function that produces random numbers.  Is it really random?  A good way to test that is to examine the pmf and cdf of the list of random numbers and visualize the distribution.  If you're not sure what pmf is, read more about it in Chapter 3.  
 
 ###Q4. [Think Stats Chapter 5 Exercise 1](statistics/5-1-blue_men.md) (normal distribution of blue men)
-This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic. 
+This is a classic example of hypothesis testing using the normal distribution.  The effect size used here is the Z-statistic.
 
 
 
-###Q5. Bayesian (Elvis Presley twin) 
+###Q5. Bayesian (Elvis Presley twin)
 
 Bayes' Theorem is an important tool in understanding what we really know, given evidence of other information we have, in a quantitative way.  It helps incorporate conditional probabilities into our conclusions.
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+```
+prob_frat = 1.0/125
+prob_ident = 1.0/300
+
+prob_frat_given_ident = 1.0
+
+prob_ident_given_frat = (prob_frat_given_ident * prob_ident) / prob_frat
+
+print prob_ident_given_frat
+```
+
+> Result: **0.416666666667**
+
+
+> There's a 41.67% chance that Elvis was an identical twin given that he was a twin.
 
 ---
 
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+> In Frequentist statistics, there are no probabilities, just long-run frequencies. We must treat all events as repeated events -- even events which can only happen once, like the 2016 US Presidential election. In this case, we have to imagine that the same election would happen multiple times in a sort of "parallel universes" construct so that we can determine the "frequency" of this one-time event.
+
+> Bayesian statistics is more like the natural intuitive idea of "probability" as used in plain language: the probability of an even is the likelihood that it will occur, given prior information and acknowledging uncertainty about the outcome.
 
 ---
 
@@ -100,10 +116,3 @@ In the theoretical world, all data related to an experiment or a scientific prob
 ## More Resources
 
 Some people enjoy video content such as Khan Academy's [Probability and Statistics](https://www.khanacademy.org/math/probability) or the much longer and more in-depth Harvard [Statistics 110](https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo). You might also be interested in the book [Statistics Done Wrong](http://www.statisticsdonewrong.com/) or a very short [overview](http://schoolofdata.org/handbook/courses/the-math-you-need-to-start/) from School of Data.
-
-
-
-
-
-
-
